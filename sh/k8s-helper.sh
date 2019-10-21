@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # This depends on curl
-curl --version &> /dev/null
+curl --version >/dev/null 2>&1
 if [ $? -ne 0 ];then
   echo '== Please install CURL!' 1>&2
   exit 0
